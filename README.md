@@ -64,6 +64,7 @@ Result Generation
     v
 Final Output
 
+---
 
 ## 6. Functional Modules
 
@@ -82,6 +83,7 @@ Uses computer vision techniques to estimate the visually affected portion of the
 Result Generation:
 Combines the disease prediction, confidence, severity, affected area, and recommendation into a final result.
 
+---
 
 ## 7. Disease Classes:
 The model supports the following 10 tomato categories:
@@ -96,8 +98,9 @@ Tomato Target Spot
 Tomato Mosaic Virus
 Tomato Yellow Leaf Curl Virus
 
+---
 
-8. Technology Stack
+## 8. Technology Stack
 Python
 TensorFlow / Keras
 MobileNetV2
@@ -110,8 +113,9 @@ scikit-learn
 Git
 GitHub
 
+---
 
-9. Project Structure
+## 9. Project Structure
 Plant-Disease-Detection/
 |
 ├── models/
@@ -144,8 +148,9 @@ Plant-Disease-Detection/
 ├── statement.md
 └── .gitignore
 
+---
 
-10. Installation
+## 10. Installation
 Clone the repository and open the project directory.
 
 Create and activate a Python virtual environment:
@@ -157,8 +162,9 @@ Windows PowerShell:
 Install the required dependencies:
 pip install -r requirements.txt
 
+---
 
-11. Dataset
+## 11. Dataset
 The project uses the PlantVillage dataset and works with 10 tomato classes.
 The dataset is not included in this repository because of its size.
 
@@ -171,8 +177,9 @@ data/tomato/
 The dataset should be prepared before training using:
 python src/prepare_dataset.py
 
+---
 
-12. Training the Model
+## 12. Training the Model
 The model can be trained using:
 python src/train.py
 
@@ -182,8 +189,9 @@ models/plant_disease_model.keras
 Class names are stored in:
 models/class_names.json
 
+---
 
-13. Disease Prediction
+## 13. Disease Prediction
 
 To predict a disease from an image:
 python src/predict.py --image "path/to/leaf_image.jpg"
@@ -199,8 +207,9 @@ Affected Area
 Recommendation
 Visual result path
 
+---
 
-14. Model Evaluation
+## 14. Model Evaluation
 
 The trained model can be evaluated using:
 python src/evaluate.py
@@ -225,8 +234,9 @@ Test Loss	0.3363
 Macro F1-score	85.93%
 Weighted F1-score	88.93%
 
+---
 
-15. Severity Analysis
+## 15. Severity Analysis
 The severity module uses computer vision processing to estimate the visually affected region of the leaf.
 
 The process includes:
@@ -244,8 +254,9 @@ More than 40%	High
 
 These thresholds are defined for this project as a visual prototype and should not be interpreted as an agricultural diagnosis or treatment standard.
 
+---
 
-16. Example Result
+## 16. Example Result
 
 Example demonstration output:
 
@@ -259,8 +270,9 @@ Recommendation:
 A moderate visual severity was estimated.
 Further inspection of the plant is recommended.
 
+---
 
-17. Testing
+## 17. Testing
 
 The project contains automated tests in:
 tests/test_prediction.py
@@ -274,16 +286,18 @@ Class-name file availability
 Correct number of classes
 Model prediction output shape
 
+---
 
-18. Limitations
+## 18. Limitations
 The model is trained for the selected tomato classes only.
 Prediction performance depends on image quality and similarity to the training data.
 The severity module provides a project-defined visual estimate.
 Severity estimation has not been presented as a scientifically validated agricultural measurement.
 The system should therefore be treated as a computer vision prototype.
 
+---
 
-19. Future Enhancements
+## 19. Future Enhancements
 Support additional crops and diseases.
 Improve disease classification accuracy.
 Use a larger and more diverse dataset.
@@ -292,15 +306,10 @@ Develop a web or mobile interface.
 Add real-time camera-based detection.
 Develop a more extensively validated severity estimation method.
 
+---
 
-20. Conclusion
+## 20. Conclusion
 This project demonstrates the use of computer vision and deep learning for tomato plant disease classification and visual severity estimation.
 The system combines image preprocessing, transfer learning, disease classification, OpenCV-based severity analysis, automated testing, and structured result generation into a modular computer vision pipeline.
 
 
-### After pasting
-Save `README.md`.
-**Do not push yet.**
-Because we changed a file after the first commit, the next step is:
-```powershell
-git status
