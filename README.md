@@ -62,10 +62,10 @@ Severity Analysis
 Result Generation
     |
     v
-Final Output```
+Final Output
 
 
-6. Functional Modules
+## 6. Functional Modules
 
 Image Input and Validation:
 Accepts the leaf image and verifies that the input can be processed.
@@ -83,7 +83,7 @@ Result Generation:
 Combines the disease prediction, confidence, severity, affected area, and recommendation into a final result.
 
 
-7. Disease Classes:
+## 7. Disease Classes:
 The model supports the following 10 tomato categories:
 Tomato Healthy
 Tomato Bacterial Spot
