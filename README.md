@@ -8,8 +8,6 @@ The system accepts a tomato leaf image as input and performs image validation, p
 
 The disease classification model uses transfer learning with MobileNetV2.
 
-> Note: The severity value is a project-defined computer vision estimate based on visually affected leaf regions. It is not a scientifically validated agricultural treatment standard.
-
 ---
 
 ## 2. Problem Statement
